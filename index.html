@@ -21,39 +21,44 @@
     <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav></nav>
-    </header>
-
     <header class="menu" id="main-menu">
-      <div class="container">
+      <div class="container menu-content">
         <div class="logo">
           <a href="#main-menu">
             <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
           </a>
         </div>
 
-        <button id="menuBtn" class="hamburger open">
-          <div class="bar"></div>
-        </button>
+        <div class="brand-name">Hey, Doe!</div>
 
-        <ul>
-          <li>
-            <a href="#">Article</a>
-          </li>
+        <nav>
+          <button id="menuBtn" class="hamburger open">
+            <div class="bar"></div>
+          </button>
 
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          <!-- <ul>
+            <li>
+              <a href="#">Article</a>
+            </li>
 
-          <li>
-            <a href="#"> Sources </a>
-          </li>
-        </ul>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+
+            <li>
+              <a href="#"> Sources </a>
+            </li>
+          </ul> -->
+        </nav>
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <article class="main-article">
+        <h1>Getting started with Vue!</h1>
+      </article>
+    </main>
+
     <footer></footer>
   </body>
 </html>

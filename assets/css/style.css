@@ -1,10 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Quicksand:wght@300;400;700&display=swap");
+
+html {
+  font-family: "Quicksand";
+  line-height: 1.5;
+}
+
+.container {
+  padding: 1rem;
+}
+
+#main-menu {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   cursor: pointer;
   width: 30px;
 }
 
-.container {
-  padding: 1rem;
+.brand-name {
+  font-family: "Caudex";
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .hamburger {
@@ -43,4 +70,32 @@
 
 .hamburger.open::after {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Main Article */
+.main-article {
+  /* The image used */
+  background-image: url("../imgs/main-article/pexels-realtoughcandycom-11035366.jpg");
+
+  /* Set a specific height */
+  min-height: 50vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+.main-article h1 {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+body {
+  min-height: 300vh;
 }
