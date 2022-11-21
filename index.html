@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" href="./assets/imgs/ha-favicon.png" />
+    <link rel="icon" type="image/png" href="./assets/imgs/favicon.png" />
 
-    <title>Haidoe</title>
+    <title>HEY, DOE!</title>
 
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script> -->
 
     <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/5a138b53e8.js"
       crossorigin="anonymous"
     ></script>
-
     <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
@@ -54,11 +59,123 @@
     </header>
 
     <main>
-      <article class="main-article">
-        <h1>Getting started with Vue!</h1>
-      </article>
+      <section class="articles">
+        <header>
+          <h1>Today's Trend</h1>
+        </header>
+
+        <article class="main-article">
+          <img src="./assets/imgs/main-article/desktop.jpg" alt="" />
+
+          <small class="tag">
+            Web Development
+            <span> 26 min read </span>
+          </small>
+
+          <h2>Getting started with Vue!</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsam
+            nemo consectetur id odit neque hic nobis repudiandae, natus ratione
+            a impedit, molestias quidem nihil fugit ab quis voluptates eveniet
+            sit enim accusantium magnam assumenda quisquam? Iste repudiandae
+            omnis recusandae?
+          </p>
+
+          <small> Haidren Amalia </small>
+        </article>
+
+        <article class="main-article">
+          <img
+            src="./assets/imgs/main-article/pexels-realtoughcandycom-11035471.jpg"
+            alt=""
+          />
+
+          <small class="tag">
+            Web Development
+            <span> 10 min read </span>
+          </small>
+
+          <h2>React still dominates!</h2>
+
+          <small> Haidren Amalia </small>
+        </article>
+
+        <article class="main-article">
+          <img
+            src="./assets/imgs/main-article/pexels-realtoughcandycom-11035543.jpg"
+            alt=""
+          />
+
+          <small class="tag">
+            Web Development
+
+            <span> 6 min read </span>
+          </small>
+
+          <h2>Angular Theory</h2>
+
+          <small> Haidren Amalia </small>
+        </article>
+      </section>
+
+      <!-- <section class="articles">
+        <header>
+          <h1>Latest Trend</h1>
+        </header>
+      </section> -->
     </main>
 
-    <footer></footer>
+    <footer>
+      <section class="upper">
+        <section id="footer-logo">
+          <div class="content">
+            <div class="logo">
+              <a href="#main-menu">
+                <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
+              </a>
+            </div>
+            <div class="brand-name">Hey, Doe!</div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Information</h3>
+
+          <ul>
+            <li>Home</li>
+            <li>Article</li>
+            <li>Contact</li>
+            <li>Sources</li>
+          </ul>
+        </section>
+
+        <section id="follow-us">
+          <h3>Follow us</h3>
+
+          <ul>
+            <li>
+              <a href="https://pinterest.com" aria-label="Link to Pinterest">
+                <i class="fab fa-pinterest-square" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://facebook.com" aria-label="Link to Facebook">
+                <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://instagram.com" aria-label="Link to Instagram">
+                <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="lower">&copy; 2022 HEY, DOE!</section>
+    </footer>
   </body>
 </html>
