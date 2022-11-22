@@ -205,8 +205,21 @@ article img {
   transition: 0.5s;
 }
 
+.articles article:hover img,
 .articles article img:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
+}
+
+article {
+  cursor: pointer;
+}
+
+.articles article:hover h2 {
+  text-decoration: underline;
+}
+
+.articles a {
+  text-decoration: none;
 }
 
 article h2,
@@ -216,6 +229,7 @@ article h2,
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  color: #000;
 }
 
 .sub-article h2 {
@@ -233,6 +247,21 @@ small.tag {
   letter-spacing: 2px;
 }
 
+small span {
+  padding-left: 1rem;
+  position: relative;
+}
+
+small span::before {
+  content: "";
+  width: 2px;
+  background: rgb(149, 144, 144);
+  height: 18px;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+}
+
 article p {
   margin: 0;
   margin-bottom: 0.5rem;
@@ -247,9 +276,11 @@ article p {
   margin-top: 0;
 }
 
-.sub-article {
+.sub-article a {
   display: grid;
   grid-template-columns: 40px auto;
+  text-decoration: none;
+  color: #000;
 }
 
 .sub-article .num {
@@ -257,6 +288,7 @@ article p {
   font-family: "Days One";
   padding-top: 3px;
 }
+
 .sub-article .num::after {
   display: block;
   height: 4px;
@@ -264,6 +296,23 @@ article p {
   background-color: #000;
   content: "";
   margin: auto;
+}
+
+.sub-article .tag {
+  color: #333;
+}
+
+.sub-article:hover {
+  background-color: #000;
+}
+
+.sub-article:hover .num::after {
+  background-color: #fff;
+}
+.sub-article:hover a,
+.sub-article:hover small,
+.sub-article:hover h2 {
+  color: #fff;
 }
 
 .roadmaps h2 {
@@ -275,6 +324,29 @@ article p {
   margin: 0;
   position: relative;
   bottom: -1rem;
+  z-index: 5;
+}
+
+.roadmaps img {
+  z-index: 1;
+}
+
+.roadmaps article {
+  position: relative;
+}
+
+.roadmaps article:hover::after {
+  content: "READ MORE";
+  position: absolute;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.719);
+  color: #000;
+  bottom: 1rem;
+  padding: 0.5rem;
+  /* font-size: 0.5rem; */
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
 }
 
 .newsletter {
@@ -407,21 +479,6 @@ footer .lower {
 
   small.tag {
     letter-spacing: 0;
-  }
-
-  small span {
-    padding-left: 1rem;
-    position: relative;
-  }
-
-  small span::before {
-    content: "";
-    width: 2px;
-    background: rgb(149, 144, 144);
-    height: 18px;
-    position: absolute;
-    left: 3px;
-    top: 1px;
   }
 
   .sub-articles header {
