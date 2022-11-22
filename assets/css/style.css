@@ -36,11 +36,13 @@ body {
   width: 30px;
 }
 
-.brand-name {
+.brand-name a {
+  color: #000;
   font-family: "Caudex";
   font-weight: bold;
   font-size: 1.5rem;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .hamburger {
@@ -97,7 +99,8 @@ nav ul {
   display: block;
 }
 
-nav ul {
+nav ul,
+nav li {
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #333;
@@ -107,7 +110,7 @@ nav ul {
 nav li {
   display: block;
   text-align: center;
-  padding: 1.5rem 0;
+  /* padding: 1.5rem 0;  */
   border-top: 1px solid #333;
 }
 
@@ -125,8 +128,51 @@ nav li {
   font-weight: bold;
 }
 
-nav li:nth-child(1) {
-  border: none;
+nav .search:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+nav .search {
+  padding: 1.5rem;
+}
+
+nav form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+nav form input,
+nav button {
+  display: block;
+  border-radius: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #000;
+}
+
+nav button {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-left: none;
+}
+
+nav a {
+  display: block;
+  padding: 1rem 0;
 }
 
 main {
@@ -156,6 +202,11 @@ article img {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+  transition: 0.5s;
+}
+
+.articles article img:hover {
+  transform: scale(1.01);
 }
 
 article h2,
@@ -256,6 +307,13 @@ article p {
   color: #fff;
   font-weight: bold;
 }
+
+.newsletter input[type="button"]:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
 /* Footer Section */
 footer section section {
   margin-bottom: 1rem;
@@ -396,6 +454,10 @@ footer .lower {
     margin: 0 auto;
   }
 
+  .newsletter input[type="button"]:hover {
+    border-left: none;
+  }
+
   footer .upper .container {
     display: grid;
     gap: 2rem;
@@ -424,6 +486,10 @@ footer .lower {
     border-bottom: 1px solid #333;
   }
 
+  nav .search {
+    padding: 0.5rem 0;
+  }
+
   header .container {
     padding-left: 0;
   }
@@ -442,19 +508,20 @@ footer .lower {
     gap: 1rem;
   }
 
-  nav {
+  nav,
+  nav ul {
     border: none;
     display: flex;
     align-items: center;
   }
 
   nav ul {
-    display: block;
     opacity: 1;
     position: relative;
     text-align: right;
     background: #fff;
     border: none;
+    justify-content: end;
   }
 
   nav ul li {
@@ -465,21 +532,32 @@ footer .lower {
 
   nav ul li a {
     position: relative;
+    padding: 0;
   }
 
+  nav a,
   nav ul li:hover,
   nav ul li:hover a {
     background: #fff;
     color: #000;
   }
 
+  nav ul .active a::after,
   nav ul li:hover a::after {
     content: "";
     position: absolute;
     width: calc(100% - 1rem);
-    height: 5px;
+    height: 3px;
     background-color: #000;
-    transform: translate(-120%, 2rem);
+    transform: translate(-115%, 2rem);
+  }
+
+  .search {
+    margin: 0;
+  }
+  nav form input,
+  nav button {
+    margin: 0;
   }
 
   #menuBtn {
@@ -507,7 +585,7 @@ footer .lower {
 }
 
 /* TODO */
-/* most recent alignment */
+
 /* Roadmaps Hover */
 /* subscribe hover focus */
 /* add angchor tags to article titles */
