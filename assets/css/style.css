@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Days+One&family=Space+Mono:wght@400;700&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Quicksand:wght@300;400;700&display=swap");
 
 html {
@@ -81,8 +80,10 @@ body {
 main {
   padding: 1rem;
 }
-section.articles {
-  /* border-top: 2px solid #000; */
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 section header h1 {
@@ -105,12 +106,17 @@ article img {
   margin-bottom: 1rem;
 }
 
-article h2 {
+article h2,
+.sub-article h2 {
   margin: 0;
   font-family: "Days One";
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+}
+
+.sub-article h2 {
+  font-size: 1rem;
 }
 
 article small,
@@ -130,6 +136,32 @@ article p {
   color: #333;
 }
 
+.sub-articles article {
+  margin-bottom: 1rem;
+}
+
+.sub-articles h2 {
+  margin-top: 0;
+}
+
+.sub-article {
+  display: grid;
+  grid-template-columns: 40px auto;
+}
+
+.sub-article .num {
+  justify-self: center;
+  font-family: "Days One";
+  padding-top: 3px;
+}
+.sub-article .num::after {
+  display: block;
+  height: 4px;
+  width: 10px;
+  background-color: #000;
+  content: "";
+  margin: auto;
+}
 /* Footer Section */
 footer section section {
   margin-bottom: 1rem;
