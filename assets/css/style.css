@@ -162,6 +162,17 @@ article p {
   content: "";
   margin: auto;
 }
+
+.roadmaps h2 {
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  position: relative;
+  bottom: -1rem;
+}
 /* Footer Section */
 footer section section {
   margin-bottom: 1rem;
