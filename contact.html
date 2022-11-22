@@ -4,7 +4,148 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact me | Haidoe</title>
+
+    <link rel="icon" type="image/png" href="./assets/imgs/favicon2.png" />
+
+    <title>Contact Me | HEY, DOE!</title>
+
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script> -->
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/5a138b53e8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header class="menu" id="main-menu">
+      <div class="wrapper">
+        <div class="container menu-content">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assets/imgs/logo.svg" alt="Hey, Doe! Logo" />
+            </a>
+          </div>
+
+          <div class="brand-name">
+            <a href="./index.html"> Hey, Doe! </a>
+          </div>
+
+          <button id="menuBtn" class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </div>
+
+        <nav>
+          <ul id="nav">
+            <li>
+              <a href="./article.html">Article</a>
+            </li>
+
+            <li class="active">
+              <a href="./contact.html">Contact</a>
+            </li>
+
+            <li>
+              <a href="./sources.html"> Sources </a>
+            </li>
+
+            <li class="search">
+              <form id="searchForm" action="search">
+                <input type="search" placeholder="Search" />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">Contact Us</main>
+
+    <footer>
+      <section class="upper">
+        <div class="container">
+          <section id="footer-logo">
+            <div class="content">
+              <div class="logo">
+                <a href="#main-menu">
+                  <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
+                </a>
+              </div>
+
+              <h1 class="brand-name">
+                <a href="./index.html"> Hey, Doe! </a>
+              </h1>
+            </div>
+          </section>
+
+          <section id="page-list">
+            <h1>PAGES</h1>
+
+            <ul>
+              <li>
+                <a href="./index.html"> Home </a>
+              </li>
+
+              <li>
+                <a href="./article.html"> Article </a>
+              </li>
+
+              <li>
+                <a href="./contact.html"> Contact </a>
+              </li>
+
+              <li><a href="./sources.html"> Sources </a></li>
+            </ul>
+          </section>
+
+          <section id="follow-us">
+            <h1>Follow us</h1>
+
+            <ul>
+              <li>
+                <a href="https://pinterest.com" aria-label="Link to Pinterest">
+                  <i class="fab fa-pinterest-square" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://facebook.com" aria-label="Link to Facebook">
+                  <i
+                    class="fa-brands fa-square-facebook"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com" aria-label="Link to Instagram">
+                  <i
+                    class="fa-brands fa-square-instagram"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section class="lower">
+        <div class="container">&copy; 2022 HEY, DOE!</div>
+      </section>
+    </footer>
+  </body>
 </html>

@@ -37,6 +37,10 @@ body {
   width: 30px;
 }
 
+.brand-name {
+  margin: 0;
+}
+
 .brand-name a {
   color: #000;
   font-family: "Caudex";
@@ -115,6 +119,8 @@ nav li {
   border-top: 1px solid #333;
 }
 
+nav .active,
+nav .active a,
 nav li:hover,
 nav li:hover a {
   color: #fff;
@@ -241,7 +247,7 @@ article h2,
 }
 
 article small,
-h3 {
+footer h1 {
   font-family: "Space Mono";
   text-transform: uppercase;
   color: #1a1a1a;
@@ -396,7 +402,7 @@ footer section section {
   margin-bottom: 1rem;
 }
 
-footer h3 {
+footer h1 {
   margin: 0;
 }
 
@@ -506,10 +512,12 @@ footer .lower {
     margin-top: 3rem;
     align-items: start;
   }
+
   .roadmaps,
   .newsletter {
     margin: 5rem 0;
   }
+
   .roadmaps article {
     margin-bottom: 0;
   }
@@ -604,6 +612,12 @@ footer .lower {
   nav ul li a {
     position: relative;
     padding: 0;
+  }
+
+  nav .active,
+  nav .active a {
+    color: #000;
+    background-color: #fff;
   }
 
   nav a,

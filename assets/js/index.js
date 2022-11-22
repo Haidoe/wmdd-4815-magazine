@@ -4,4 +4,3 @@ menuBtn.addEventListener("click", () => {
 });
 
 searchForm.addEventListener("submit", (e) => e.preventDefault());
-newsletterForm.addEventListener("submit", (e) => e.preventDefault());
