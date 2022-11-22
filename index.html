@@ -31,7 +31,7 @@
         <div class="container menu-content">
           <div class="logo">
             <a href="./index.html">
-              <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
+              <img src="./assets/imgs/logo.svg" alt="Hey, Doe! Logo" />
             </a>
           </div>
 
@@ -47,19 +47,19 @@
         <nav>
           <ul id="nav">
             <li>
-              <a href="#">Article</a>
+              <a href="./article.html">Article</a>
             </li>
 
             <li>
-              <a href="#">Contact</a>
+              <a href="./contact.html">Contact</a>
             </li>
 
             <li>
-              <a href="#"> Sources </a>
+              <a href="./sources.html"> Sources </a>
             </li>
 
             <li class="search">
-              <form action="#search">
+              <form id="searchForm" action="search">
                 <input type="search" placeholder="Search" />
                 <button type="submit">
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -77,12 +77,15 @@
           <h1>Today's Trend</h1>
         </header>
 
-        <article class="main-article">
-          <a href="/article.html">
-            <img src="./assets/imgs/main-article/desktop.jpg" alt="" />
+        <a href="/article.html " class="main-article">
+          <article>
+            <img
+              src="./assets/imgs/main-article/mobile.jpg"
+              alt="a typewritter with a paper written with Vue.js"
+            />
 
             <small class="tag">
-              FRONTEND
+              FRONTEND DEVELOPMENT
               <span> 26 min read </span>
             </small>
 
@@ -97,14 +100,14 @@
             </p>
 
             <small> Haidren Amalia </small>
-          </a>
-        </article>
+          </article>
+        </a>
 
-        <article>
-          <a href="/article.html">
+        <a href="/article.html">
+          <article>
             <img
               src="./assets/imgs/main-article/pexels-realtoughcandycom-11035471.jpg"
-              alt=""
+              alt="a hand pushing toward a ReactJS Sticker"
             />
 
             <small class="tag">
@@ -115,14 +118,14 @@
             <h2>React still dominates!</h2>
 
             <small> Haidren Amalia </small>
-          </a>
-        </article>
+          </article>
+        </a>
 
-        <article>
-          <a href="/article.html">
+        <a href="/article.html">
+          <article>
             <img
               src="./assets/imgs/main-article/pexels-realtoughcandycom-11035543.jpg"
-              alt=""
+              alt="a hand pushing toward an Angular JS Sticker"
             />
 
             <small class="tag">
@@ -134,8 +137,8 @@
             <h2>Angular Theory</h2>
 
             <small> Haidren Amalia </small>
-          </a>
-        </article>
+          </article>
+        </a>
       </section>
 
       <section class="sub-articles">
@@ -200,38 +203,44 @@
       </section>
 
       <section class="roadmaps">
-        <article>
-          <h2>FRONTEND ROADMAP</h2>
-          <img
-            src="./assets/imgs/raodmaps/fe-small.jpg"
-            alt="2 Frontend related books with a cactus plant in the left side"
-          />
-        </article>
+        <a href="#">
+          <article>
+            <h2>FRONTEND ROADMAP</h2>
+            <img
+              src="./assets/imgs/raodmaps/fe-small.jpg"
+              alt="2 Frontend related books with a cactus plant in the left side"
+            />
+          </article>
+        </a>
 
-        <article>
-          <h2>BACKEND ROADMAP</h2>
-          <img
-            src="./assets/imgs/raodmaps/be-small.jpg"
-            alt="a developer staring outside the window building in front of her laptop and 2 monitors "
-          />
-        </article>
+        <a href="#">
+          <article>
+            <h2>BACKEND ROADMAP</h2>
+            <img
+              src="./assets/imgs/raodmaps/be-small.jpg"
+              alt="a developer staring outside the window building in front of her laptop and 2 monitors "
+            />
+          </article>
+        </a>
 
-        <article>
-          <h2>DEVOPS ROADMAP</h2>
-          <img
-            src="./assets/imgs/raodmaps/devops-small.jpg"
-            alt="a man staring at his monitor and a laptop"
-          />
-        </article>
+        <a href="#">
+          <article>
+            <h2>DEVOPS ROADMAP</h2>
+            <img
+              src="./assets/imgs/raodmaps/devops-small.jpg"
+              alt="a man staring at his monitor and a laptop"
+            />
+          </article>
+        </a>
       </section>
 
       <section class="newsletter">
         <h1>Newsletter</h1>
         <p>Get notified with the recent web updates and trends.</p>
 
-        <form action="#">
+        <form id="newsletterForm" action="#">
           <input type="email" placeholder="Email" />
-          <input type="button" value="SUBSCRIBE" />
+          <input type="submit" value="SUBSCRIBE" />
         </form>
       </section>
     </main>
@@ -253,14 +262,23 @@
             </div>
           </section>
 
-          <section>
+          <section id="page-list">
             <h3>PAGES</h3>
 
             <ul>
-              <li>Home</li>
-              <li>Article</li>
-              <li>Contact</li>
-              <li>Sources</li>
+              <li>
+                <a href="./index.html"> Home </a>
+              </li>
+
+              <li>
+                <a href="./article.html"> Article </a>
+              </li>
+
+              <li>
+                <a href="./contact.html"> Contact </a>
+              </li>
+
+              <li><a href="./sources.html"> Sources </a></li>
             </ul>
           </section>
 

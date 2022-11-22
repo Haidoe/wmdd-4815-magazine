@@ -14,6 +14,7 @@ body {
   padding: 1rem;
 }
 
+/* Main Menu Nav */
 #main-menu {
   position: sticky;
   top: 0;
@@ -175,6 +176,9 @@ nav a {
   padding: 1rem 0;
 }
 
+/* END Main Menu Nav  */
+
+/* Main Contents */
 main {
   padding: 1rem;
 }
@@ -374,13 +378,14 @@ article p {
   border: 2px solid #000;
 }
 
-.newsletter input[type="button"] {
+.newsletter input[type="submit"] {
   background-color: #000;
   color: #fff;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.newsletter input[type="button"]:hover {
+.newsletter input[type="submit"]:hover {
   background-color: #fff;
   color: #000;
   border: 2px solid #000;
@@ -404,6 +409,15 @@ footer .upper {
 .upper ul {
   list-style-type: none;
   padding: 0;
+}
+
+#page-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+#page-list a:hover {
+  font-weight: bold;
 }
 
 #footer-logo,
@@ -511,7 +525,7 @@ footer .lower {
     margin: 0 auto;
   }
 
-  .newsletter input[type="button"]:hover {
+  .newsletter input[type="submit"]:hover {
     border-left: none;
   }
 
@@ -640,10 +654,3 @@ footer .lower {
     left: 0;
   }
 }
-
-/* TODO */
-
-/* Roadmaps Hover */
-/* subscribe hover focus */
-/* add angchor tags to article titles */
-/* Desktop Nav version and search */
