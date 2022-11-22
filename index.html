@@ -27,21 +27,24 @@
   </head>
   <body>
     <header class="menu" id="main-menu">
-      <div class="container menu-content">
-        <div class="logo">
-          <a href="#main-menu">
-            <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
-          </a>
-        </div>
+      <div class="wrapper">
+        <div class="container menu-content">
+          <div class="logo">
+            <a href="#main-menu">
+              <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
+            </a>
+          </div>
 
-        <div class="brand-name">Hey, Doe!</div>
+          <div class="brand-name">Hey, Doe!</div>
 
-        <nav>
-          <button id="menuBtn" class="hamburger open">
+          <button id="menuBtn" class="hamburger">
             <div class="bar"></div>
           </button>
+        </div>
 
-          <!-- <ul>
+        <nav>
+          <ul id="nav">
+            <li>Search</li>
             <li>
               <a href="#">Article</a>
             </li>
@@ -53,12 +56,12 @@
             <li>
               <a href="#"> Sources </a>
             </li>
-          </ul> -->
+          </ul>
         </nav>
       </div>
     </header>
 
-    <main>
+    <main class="container">
       <section class="articles">
         <header>
           <h1>Today's Trend</h1>
@@ -85,7 +88,7 @@
           <small> Haidren Amalia </small>
         </article>
 
-        <article class="main-article">
+        <article>
           <img
             src="./assets/imgs/main-article/pexels-realtoughcandycom-11035471.jpg"
             alt=""
@@ -101,7 +104,7 @@
           <small> Haidren Amalia </small>
         </article>
 
-        <article class="main-article">
+        <article>
           <img
             src="./assets/imgs/main-article/pexels-realtoughcandycom-11035543.jpg"
             alt=""
@@ -188,7 +191,7 @@
         </article>
 
         <article>
-          <h2>PLATFORM ENGINEERING ROADMAP</h2>
+          <h2>DEVOPS ROADMAP</h2>
           <img
             src="./assets/imgs/raodmaps/devops-small.jpg"
             alt="a man staring at his monitor and a laptop"
@@ -209,54 +212,64 @@
 
     <footer>
       <section class="upper">
-        <section id="footer-logo">
-          <div class="content">
-            <div class="logo">
-              <a href="#main-menu">
-                <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
-              </a>
+        <div class="container">
+          <section id="footer-logo">
+            <div class="content">
+              <div class="logo">
+                <a href="#main-menu">
+                  <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
+                </a>
+              </div>
+              <div class="brand-name">Hey, Doe!</div>
             </div>
-            <div class="brand-name">Hey, Doe!</div>
-          </div>
-        </section>
+          </section>
 
-        <section>
-          <h3>PAGES</h3>
+          <section>
+            <h3>PAGES</h3>
 
-          <ul>
-            <li>Home</li>
-            <li>Article</li>
-            <li>Contact</li>
-            <li>Sources</li>
-          </ul>
-        </section>
+            <ul>
+              <li>Home</li>
+              <li>Article</li>
+              <li>Contact</li>
+              <li>Sources</li>
+            </ul>
+          </section>
 
-        <section id="follow-us">
-          <h3>Follow us</h3>
+          <section id="follow-us">
+            <h3>Follow us</h3>
 
-          <ul>
-            <li>
-              <a href="https://pinterest.com" aria-label="Link to Pinterest">
-                <i class="fab fa-pinterest-square" aria-hidden="true"></i>
-              </a>
-            </li>
+            <ul>
+              <li>
+                <a href="https://pinterest.com" aria-label="Link to Pinterest">
+                  <i class="fab fa-pinterest-square" aria-hidden="true"></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://facebook.com" aria-label="Link to Facebook">
-                <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
+              <li>
+                <a href="https://facebook.com" aria-label="Link to Facebook">
+                  <i
+                    class="fa-brands fa-square-facebook"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
 
-            <li>
-              <a href="https://instagram.com" aria-label="Link to Instagram">
-                <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </section>
+              <li>
+                <a href="https://instagram.com" aria-label="Link to Instagram">
+                  <i
+                    class="fa-brands fa-square-instagram"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
       </section>
 
-      <section class="lower">&copy; 2022 HEY, DOE!</section>
+      <section class="lower">
+        <div class="container">&copy; 2022 HEY, DOE!</div>
+      </section>
     </footer>
   </body>
 </html>
