@@ -668,3 +668,68 @@ footer .lower {
     left: 0;
   }
 }
+
+/* Contact Us Page */
+#contactUsContent {
+  margin: 4rem 0;
+}
+
+#contactUsContent h1 {
+  font-family: "Space Mono";
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+#contactUsContent input {
+  display: block;
+  box-sizing: border-box;
+  width: calc(100% - 4px);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+#contactUsContent input[type="submit"] {
+  text-transform: uppercase;
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+#contactUsContent input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#contactUsContent img {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  #contactUsContent img {
+    display: unset;
+  }
+
+  #contactUsContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "img form";
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  #contactUsContent h1 {
+    grid-area: header;
+    text-align: center;
+  }
+
+  #contactUsContent form {
+    grid-area: form;
+    align-self: center;
+  }
+}
