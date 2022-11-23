@@ -40,7 +40,11 @@
             <a href="./index.html"> Hey, Doe! </a>
           </div>
 
-          <button id="menuBtn" class="hamburger">
+          <button
+            id="menuBtn"
+            class="hamburger"
+            aria-label="hamburger mene button"
+          >
             <div class="bar"></div>
           </button>
         </div>
@@ -72,8 +76,250 @@
       </div>
     </header>
 
-    <main class="container">
+    <main class="container" id="sourcesContent">
       <h1>Sources</h1>
+
+      <div class="table-wrapper">
+        <table>
+          <caption>
+            List of assets and its attribution.
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Contents</th>
+              <th scope="col">Authors</th>
+              <th scope="col">Links</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="./assets/imgs/main-article/mobile-v2.jpg"
+                  alt="a typewritter with a paper written with Vue.js"
+                />
+              </td>
+              <td>Markus Winkler</td>
+              <td>
+                <a
+                  href="https://pixabay.com/photos/mockup-typewriter-word-vuejs-vue-5281992/ "
+                  target="_blank"
+                >
+                  Pixabay
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="./assets/imgs/main-article/pexels-realtoughcandycom-11035543.jpg"
+                  alt="a hand pushing toward an Angular JS Sticker"
+                />
+              </td>
+
+              <td>RealToughCandy.com</td>
+
+              <td>
+                <a
+                  href="https://www.pexels.com/photo/hand-holding-shield-shaped-red-sticker-11035543/"
+                  target="_blank"
+                >
+                  Pexels
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="./assets/imgs/main-article/pexels-realtoughcandycom-11035471.jpg"
+                  alt="a hand pushing toward a ReactJS Sticker"
+                />
+              </td>
+
+              <td>RealToughCandy.com</td>
+              <td>
+                <a
+                  href=" https://www.pexels.com/photo/hand-holding-react-sticker-11035471/"
+                  target="_blank"
+                >
+                  Pexels
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="./assets/imgs/raodmaps/fe-small.jpg"
+                  alt="2 Frontend related books with a cactus plant in the left side"
+                />
+              </td>
+
+              <td>Greg Rakozy</td>
+
+              <td>
+                <a
+                  href="https://unsplash.com/photos/vw3Ahg4x1tY"
+                  target="_blank"
+                >
+                  Unsplash
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="./assets/imgs/raodmaps/be-small.jpg"
+                  alt="a developer staring outside the window building in front of her laptop and 2 monitors "
+                />
+              </td>
+
+              <td>Christina Morillo</td>
+
+              <td>
+                <a
+                  href="https://www.pexels.com/photo/woman-sitting-while-operating-macbook-pro-1181676/"
+                  target="_blank"
+                >
+                  Pexels
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="./assets/imgs/raodmaps/devops-small.jpg"
+                  alt="a man staring at his monitor and a laptop"
+                />
+              </td>
+              <td>Mikhail Fesenko</td>
+              <td>
+                <a
+                  href="https://www.pexels.com/photo/man-people-laptop-notebook-9553905/ "
+                  target="_blank"
+                >
+                  Pexels
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="./assets/imgs/mail-g24b670a0a_640.jpg"
+                  alt="a typewritter with a paper written with Send a Mail text"
+                />
+              </td>
+
+              <td>Markus Winkler</td>
+
+              <td>
+                <a
+                  href="https://pixabay.com/photos/mail-communication-contact-e-mail-5238394/"
+                  target="_blank"
+                >
+                  Pixabay
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Typefaces:</h2>
+
+                <ul>
+                  <li>Caudex (Logo)</li>
+                  <li>Space Mono (Section Headers)</li>
+                  <li>Days One (Article Titles)</li>
+                  <li>Quicksand (The rest of the text)</li>
+                </ul>
+              </td>
+
+              <td>Google Fonts</td>
+
+              <td>
+                <a href="https://fonts.google.com/" target="_blank">
+                  Google Fonts
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Normalize CSS</td>
+
+              <td>Nicolas Gallagher</td>
+
+              <td>
+                <a
+                  href="https://github.com/necolas/normalize.css"
+                  target="_blank"
+                >
+                  Github
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <h2>Icons:</h2>
+                <ul>
+                  <li>
+                    <i
+                      class="fa-solid fa-magnifying-glass"
+                      aria-label="Magnifying Icon"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+
+                  <li>
+                    <i
+                      class="fab fa-pinterest-square"
+                      aria-label="Pinterest Icon"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-brands fa-square-facebook"
+                      aria-label="Facebook Icon"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+
+                  <li>
+                    <i
+                      class="fa-brands fa-square-instagram"
+                      aria-label="Instagram Icon"
+                      aria-hidden="true"
+                    ></i>
+                  </li>
+                </ul>
+              </td>
+              <td>Fontawesome</td>
+              <td>
+                <a href="https://fontawesome.com/" target="_blank">
+                  Fontawesome
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>HighlightJS Library</td>
+
+              <td>HighlightJS</td>
+
+              <td>
+                <a href="https://github.com/highlightjs" target="_blank">
+                  Github
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
 
     <footer>
@@ -152,26 +398,4 @@
   </body>
 </html>
 
-<!-- Vue Image -->
-<!-- https://pixabay.com/photos/mockup-typewriter-word-vuejs-vue-5281992/ -->
-
-<!-- Normalize CSS -->
-<!-- https://github.com/necolas/normalize.css -->
-
 <!-- https://www.pexels.com/photo/road-man-people-woman-11035366/ -->
-
-<!-- React Image -->
-<!-- https://www.pexels.com/photo/hand-holding-react-sticker-11035471/ -->
-
-<!-- Angular -->
-
-<!-- https://www.pexels.com/photo/hand-holding-shield-shaped-red-sticker-11035543/ -->
-
-<!-- Send Mail -->
-<!-- https://pixabay.com/photos/mail-communication-contact-e-mail-5238394/ -->
-
-<!-- BE Image -->
-<!-- https://www.pexels.com/photo/woman-sitting-while-operating-macbook-pro-1181676/ -->
-
-<!-- DEVOPS -->
-<!-- https://www.pexels.com/photo/man-people-laptop-notebook-9553905/  -->
