@@ -683,41 +683,119 @@ footer .lower {
 
 /* Contact Us Page */
 #contactUsContent {
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 #contactUsContent h1 {
   font-family: "Space Mono";
   font-size: 2rem;
   margin: 0;
-  margin-bottom: 2rem;
 }
 
-#contactUsContent input {
+#contactUsContent input,
+#contactUsContent textarea,
+#contactUsContent button {
   display: block;
   box-sizing: border-box;
   width: calc(100% - 4px);
   padding: 0.75rem;
   margin-bottom: 1rem;
+  resize: none;
 }
 
-#contactUsContent input[type="submit"] {
+#contactUsContent button {
   text-transform: uppercase;
   border: 2px solid #000;
   background-color: #000;
   color: #fff;
   font-weight: bold;
+  cursor: pointer;
 }
 
-#contactUsContent input[type="submit"]:hover {
+#contactUsContent button:hover {
   background-color: #fff;
   color: #000;
+}
+
+#contactUsContent button i {
+  margin-right: 1rem;
 }
 
 #contactUsContent img {
   display: none;
   width: 100%;
   height: auto;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 300px; /* Need a specific value to work */
+  height: 300px;
+  background-color: #fff;
+  border: 2px solid #000;
+  display: none;
+}
+
+.overlay.show {
+  display: unset;
+}
+
+.overlay .content {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.overlay .action-header {
+  position: relative;
+}
+
+.overlay .action-header i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  color: #666;
+  z-index: 20;
+}
+
+.overlay .action-header i:hover {
+  color: #000;
+}
+
+.overlay img {
+  height: auto;
+  width: 200px;
+  margin: auto;
+}
+
+.overlay p {
+  margin: 0;
+}
+
+#failOverlayContent.content,
+#successOverlayContent.content {
+  display: none;
+}
+
+#failOverlayContent.content.show,
+#successOverlayContent.content.show {
+  display: grid;
+}
+
+#failOverlayContent p {
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 1024px) {
