@@ -359,7 +359,6 @@ article p {
   color: #000;
   bottom: 1rem;
   padding: 0.5rem;
-  /* font-size: 0.5rem; */
   width: 100%;
   text-align: center;
   font-weight: bold;
@@ -759,7 +758,7 @@ footer .lower {
   position: relative;
 }
 
-.overlay .action-header i {
+.overlay .action-header button {
   position: absolute;
   top: 0;
   right: 0;
@@ -768,6 +767,8 @@ footer .lower {
   padding: 1rem;
   color: #666;
   z-index: 20;
+  border: none;
+  background-color: #fff;
 }
 
 .overlay .action-header i:hover {
@@ -899,4 +900,63 @@ footer .lower {
   #sourcesContent h1 {
     text-align: center;
   }
+}
+
+/* Article Page */
+#articleContent article {
+  cursor: auto;
+}
+#articleContent .img-wrapper {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+#articleContent .author {
+  display: grid;
+  grid-template-columns: 120px auto;
+  font-family: "Space Mono", sans-serif;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#articleContent .author img {
+  height: auto;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+#articleContent .author .author-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+#articleContent .author .date-posted {
+  color: #8a8787;
+}
+
+#articleContent h1 {
+  font-family: "Days One", serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#articleContent h2 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+#articleContent p {
+  font-size: 1.25rem;
+}
+
+#articleContent em {
+  font-weight: bold;
+  font-style: normal;
 }
