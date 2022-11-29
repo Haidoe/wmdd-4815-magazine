@@ -952,11 +952,27 @@ footer .lower {
   margin-bottom: 1rem;
 }
 
+#articleContent h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 #articleContent p {
   font-size: 1.25rem;
 }
 
-#articleContent em {
+#articleContent article a,
+#articleContent article em {
   font-weight: bold;
   font-style: normal;
+  color: #000;
+}
+
+#articleContent article li span {
+  color: rgb(119, 116, 116);
+}
+/* Copy Button Hover for Highlight JS */
+.hljs-copy-button {
+  cursor: pointer;
 }

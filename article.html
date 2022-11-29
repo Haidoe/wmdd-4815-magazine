@@ -12,12 +12,35 @@
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <!-- HighlightJS CSS -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
+    />
+
     <!-- Fontawesome -->
     <script
       src="https://kit.fontawesome.com/5a138b53e8.js"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"
+      defer
+    ></script>
+
+    <script
+      src="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.js"
+      defer
+    ></script>
+
     <script src="./assets/js/index.js" defer></script>
+    <script src="./assets/js/article.js" defer></script>
   </head>
   <body>
     <header class="menu" id="main-menu">
@@ -68,6 +91,389 @@
         </nav>
       </div>
     </header>
+
+    <main class="container" id="articleContent">
+      <article>
+        <header>
+          <img src="./assets/imgs/main-article/article-page.jpg" alt="" />
+
+          <section class="author">
+            <div class="img-wrapper">
+              <img
+                src="./assets/imgs/main-article/haidren.jpg"
+                alt="Haidren Amalia's Professional Image"
+              />
+            </div>
+
+            <div class="info">
+              <div class="author-name">Haidren Amalia</div>
+              <div class="date-posted">Posted on November 25, 2022</div>
+            </div>
+          </section>
+
+          <h1>Getting Started With Vue</h1>
+        </header>
+
+        <p>
+          I have been exploring the front end for quite sometime now. I already
+          have experiences working with jQuery, AngularJS, React, KnockoutJS as
+          tools yet among them I find <em>Vue</em> most fascinating.
+        </p>
+
+        <p>Vue is a progressive JavaScript framework created by Evan You.</p>
+
+        <p>
+          It was made popular after Taylor Otwell, creator of Laravel, a popular
+          PHP framework, tweeted about how convenient it is to use. Since then,
+          Vue has been a default Frontend framework inside Laravel.
+        </p>
+
+        <p>
+          You could just say, Vue is a JavaScript UI library where it is being
+          used building user interfaces in
+          <a href="#data-driven">DATA DRIVEN</a> way.
+        </p>
+
+        <h2>So, Why Vue?</h2>
+
+        <p>
+          Since 2014, millions of developer have chosen Vue because it has
+          everything you need to quickly create and scale truly reactive
+          products. Regardless of what scale is your product, wether you're
+          working with Freelance Project, with new Startup or even Mature
+          Enterprises company. Vue is a trusted frontend technology that gives
+          you the right tool to do the job no matter how big the product you are
+          building.
+        </p>
+
+        <p>
+          And among the JavaScript Frameworks or Libraries I stated above, Vue
+          is the easiest to learn.
+        </p>
+
+        <br />
+
+        <p>
+          Before we start, let's review first the traditional way and
+          data-driven way of updating the DOM.
+        </p>
+
+        <br />
+
+        <h3>Traditional Way</h3>
+
+        <img
+          src="./assets/imgs/traditional-dom.png"
+          alt="Flowchart for Traditional DOM Manipulation"
+        />
+
+        <ol>
+          <li>Perform a query selector from the DOM.</li>
+          <li>From the data you queried, apply your desired process.</li>
+          <li>Then update the DOM Manually</li>
+          <li>Repeat.</li>
+        </ol>
+
+        <h3 id="data-driven">Data-Driven Way</h3>
+
+        <img
+          src="./assets/imgs/data-drive.png"
+          alt="Flowchart for Data-driven way"
+        />
+
+        <ol>
+          <li>Inject the data property in the DOM</li>
+          <li>
+            Every time you updated the data property, it will automatically
+            reflect in the DOM
+          </li>
+        </ol>
+
+        <p style="text-align: center; font-weight: bold">Isn't Amazing?</p>
+
+        <h2>Let's get started!</h2>
+
+        <p>
+          My goal in this article is to introduce to you Vue. We will create a
+          simple app that accepts any input from user and display it in a list
+          in a <a href="#data-driven"> data-driven way</a>.
+        </p>
+
+        <p>
+          First, we need to import Vue package inside our HTML file. You can
+          just copy the codes below and paste inside the body.
+        </p>
+
+        <pre>
+            <code class="language-html">
+&lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt;&lt;/script&gt;
+            </code>
+          </pre>
+
+        <p>Then let's create a div with an id that has a value of "app".</p>
+
+        <p>
+          You could put anything in the div's id, but for now, I will stick with
+          app. You need to take note of the value you put inside the ID, we will
+          use it to inject our data properties.
+        </p>
+
+        <p>Then, let's add the following markups for our application:</p>
+
+        <ul>
+          <li>Input element where we can get user's input</li>
+          <li>Button</li>
+          <li>Undordered List where we will display all user's input.</li>
+        </ul>
+
+        <p>This is how it should look like:</p>
+
+        <pre>
+            <code class="language-html">
+&lt;body&gt;
+  &lt;script src="https://unpkg.com/vue@3/dist/vue.global.js"&gt;&lt;/script&gt;
+ 
+  &lt;div id="app"&gt;
+    &lt;label&gt;
+      User Input
+      &lt;input type="text"&gt;
+    &lt;/label&gt;
+
+    &lt;button&gt; Save &lt;/button&gt;
+
+    &lt;!--This is where we put user's inputs --&gt;
+    &lt;ul&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+            </code>
+          </pre>
+        <p>We already prepared the DOM.</p>
+
+        <br />
+
+        <p>Now, Let's create a script tag.</p>
+
+        <p>
+          Then, let's create an <em>object</em> with a method named
+          <em>data</em> returning an object, and a property named
+          <em>methods</em>.
+        </p>
+
+        <p>
+          The <em> methods </em> property will be an object where we will store
+          our methods or functions. Please note that the names of the property
+          must be follow (data and methods).
+        </p>
+
+        <br />
+
+        <p>This is initially how it will look like:</p>
+        <pre>
+          <code class="js">
+const obj = {
+  data() {
+    return {}
+  },
+  methods: {}
+}
+          </code>
+          </pre>
+
+        <p>These are the properties we need to inject to the DOM:</p>
+
+        <ul>
+          <li>A state storing the list of User Inputs</li>
+          <li>A method for saving user's input to the list</li>
+          <li>
+            <span>This is optional:</span> a state storing the current user's
+            input
+          </li>
+        </ul>
+
+        <p>
+          All the state we need must be part of the returned object inside the
+          <em>data</em> method.
+        </p>
+
+        <p>
+          For this application, we have 2, a string for user's input and an
+          array of user inputs.
+        </p>
+
+        <pre>
+          <code class="js">
+const obj = {
+  data() {
+    return {
+      userInput: "",
+      userInputList: []
+    }
+  },
+  methods: {}
+}
+          </code>
+        </pre>
+
+        <p>
+          And we should have a function that will store user's input to the
+          array list.
+        </p>
+
+        <pre>
+          <code class="js">
+const obj = {
+  data() {
+    return {
+      userInput: "",
+      userInputList: []
+    }
+  },
+  methods: {
+    handleSave() {
+      //Adding the userInput to the list
+      this.userInputList.push(this.userInput);
+
+      //Will clear the value of the userInput
+      this.userInput = "";
+    }
+  }
+}
+          </code>
+        </pre>
+
+        <p>
+          Now, the data properties we need is already completed. But we are only
+          half done, we still need to use Vue directives to the DOM in order the
+          reactivity to work.
+        </p>
+
+        <h3>What are Vue directives?</h3>
+
+        <p>
+          These are special HTML attributes that begins with <em>v-</em> that
+          will allow Vue to manipulate the DOM in abstract.
+        </p>
+
+        <p>For this app, we will be using 5 Vue Directives:</p>
+
+        <ul>
+          <li><em>v-model</em> will bind data property in two-way</li>
+
+          <li>
+            <em>v-on</em> will listen to DOM events and run the JavaScript code
+            after getting triggered.
+          </li>
+
+          <li>
+            <em>v-if </em> will display the HTML Node and it's children when the
+            condition is true
+          </li>
+
+          <li>
+            <em>v-for</em> will allow you to render a list in more efficient
+            way.
+          </li>
+
+          <li><em>v-text</em> will allow you to update element's text.</li>
+        </ul>
+
+        <p>
+          First, we need to bind the
+          <em>userInput property from data method</em> to our input element
+          using <em>v-model</em>.
+        </p>
+
+        <pre>
+          <code class="html">
+&lt;input type="text" v-model="userInput"&gt;
+          </code>
+        </pre>
+
+        <p>
+          Second, we need to add an event listener to the button using
+          <em> v-on </em> and trigger <em>handleSave</em> from
+          <em>methods property</em>
+        </p>
+        <pre>
+          <code code class="html">
+&lt;button v-on:click="handleSave"&gt; Save &lt;/button&gt;
+          </code>
+        </pre>
+        <br />
+
+        <p>
+          Third, we need to use <em>v-if</em> inside the <em>&lt;ul&gt;</em>
+          just to make sure it will only be rendered in the DOM if the
+          userInputList has a value.
+        </p>
+
+        <pre>
+          <code class="html">
+&lt;ul v-if="userInputList.length"&gt; ... &lt;/ul&gt;
+          </code>
+        </pre>
+
+        <p>
+          For the last one, we will be using <em>v-for with v-text</em>. The
+          <em>v-for</em> directive requires a special syntax in the form of
+          <em>item in items</em>, where <em>items</em> is the source data array
+          and <em>item</em> is an alias for the array element being iterated on.
+          And we will just use <em>v-text</em> to update the
+          <em>&lt;li&gt;'s text</em>
+        </p>
+
+        <pre>
+          <code class="html">
+&lt;ul v-if="userInputList.length"&gt;
+  &lt;li v-for="item in userInputList"&gt;
+    &lt;span v-text="item"&gt;&lt;/span&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+          </code>
+        </pre>
+
+        <p>Finally, we already prepared everything.</p>
+
+        <br />
+
+        <p>
+          For the last part, since we already imported the Vue package awhile
+          ago, we already have an access with Vue Object globally where we will
+          be using
+          <em>Vue's createApp method</em> and then pass the object<em>(obj)</em>
+          we created as an argument which returns an object with a
+          <em>mount property</em> where we will pass the id of the element where
+          we want to inject Vue's reactivity.
+        </p>
+
+        <pre>
+          <code class="js">
+//Passed the created object(obj) as the argument of Vue.createApp.
+//Injecting the reactivity inside the div with an id of "app" (mount('#app'))
+Vue.createApp(obj).mount('#app')
+          </code>
+        </pre>
+
+        <p>
+          To view the finished product,
+          <a
+            href="https://replit.com/@haidoe/Getting-Started-with-Vue?v=1"
+            target="_blank"
+          >
+            Click me.</a
+          >
+        </p>
+
+        <h2>Conclusion</h2>
+
+        <p>
+          Learning is fun, but remember VueJS is merely a tool, if you want to
+          be a good problem solver, strengthen your fundamentals and never stop
+          learning.
+        </p>
+      </article>
+    </main>
 
     <footer>
       <section class="upper">
