@@ -56,7 +56,7 @@
             <a href="./index.html"> Hey, Doe! </a>
           </div>
 
-          <button id="menuBtn" class="hamburger">
+          <button id="menuBtn" class="hamburger" aria-label="hamburger menu">
             <div class="bar"></div>
           </button>
         </div>
@@ -82,8 +82,11 @@
             <li class="search">
               <form id="searchForm" action="search">
                 <input type="search" placeholder="Search" />
-                <button type="submit">
-                  <i class="fa-solid fa-magnifying-glass"></i>
+                <button type="submit" aria-label="search icon">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    aria-hidden="true"
+                  ></i>
                 </button>
               </form>
             </li>
@@ -468,8 +471,9 @@ Vue.createApp(obj).mount('#app')
         <h2>Conclusion</h2>
 
         <p>
-          Learning is fun, but remember VueJS is merely a tool, if you want to
-          be a good problem solver, strengthen your fundamentals and never stop
+          VueJS is powerful yet merely a tool, things in web rapidly changes.
+          Don't just rely on a single tool, if you want to be a good problem
+          solver, strengthen your fundamentals, explore, and never stop
           learning.
         </p>
       </article>
