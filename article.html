@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="./assets/imgs/favicon2.png" />
+    <link rel="icon" type="image/png" href="./assets/imgs/favicon2.png">
 
     <title>Getting Started with Vue | HEY, DOE!</title>
 
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- HighlightJS CSS -->
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
-    />
+    >
 
     <link
       rel="stylesheet"
       href="https://unpkg.com/highlightjs-copy/dist/highlightjs-copy.min.css"
-    />
+    >
 
     <!-- Fontawesome -->
     <script
@@ -48,7 +48,7 @@
         <div class="container menu-content">
           <div class="logo">
             <a href="./index.html">
-              <img src="./assets/imgs/logo.svg" alt="Hey, Doe! Logo" />
+              <img src="./assets/imgs/logo.svg" alt="Hey, Doe! Logo">
             </a>
           </div>
 
@@ -57,7 +57,7 @@
           </div>
 
           <button id="menuBtn" class="hamburger" aria-label="hamburger menu">
-            <div class="bar"></div>
+            <span class="bar"></span>
           </button>
         </div>
 
@@ -81,7 +81,7 @@
 
             <li class="search">
               <form id="searchForm" action="search">
-                <input type="search" placeholder="Search" />
+                <input type="search" placeholder="Search">
                 <button type="submit" aria-label="search icon">
                   <i
                     class="fa-solid fa-magnifying-glass"
@@ -98,21 +98,21 @@
     <main class="container" id="articleContent">
       <article>
         <header>
-          <img src="./assets/imgs/main-article/article-page.jpg" alt="" />
+          <img src="./assets/imgs/main-article/article-page.jpg" alt="a typewritter with a paper written VueJS">
 
-          <section class="author">
+          <div class="author">
             <div class="img-wrapper">
               <img
                 src="./assets/imgs/main-article/haidren.jpg"
                 alt="Haidren Amalia's Professional Image"
-              />
+              >
             </div>
 
             <div class="info">
               <div class="author-name">Haidren Amalia</div>
               <div class="date-posted">Posted on November 25, 2022</div>
             </div>
-          </section>
+          </div>
 
           <h1>Getting Started With Vue</h1>
         </header>
@@ -154,21 +154,21 @@
           is the easiest to learn.
         </p>
 
-        <br />
+        <br>
 
         <p>
           Before we start, let's review first the traditional way and
           data-driven way of updating the DOM.
         </p>
 
-        <br />
+        <br>
 
         <h3>Traditional Way</h3>
 
         <img
           src="./assets/imgs/traditional-dom.png"
           alt="Flowchart for Traditional DOM Manipulation"
-        />
+        >
 
         <ol>
           <li>Perform a query selector from the DOM.</li>
@@ -182,7 +182,7 @@
         <img
           src="./assets/imgs/data-drive.png"
           alt="Flowchart for Data-driven way"
-        />
+        >
 
         <ol>
           <li>Inject the data property in the DOM</li>
@@ -253,7 +253,7 @@
           </pre>
         <p>We already prepared the DOM.</p>
 
-        <br />
+        <br>
 
         <p>Now, Let's create a script tag.</p>
 
@@ -269,7 +269,7 @@
           must be follow (data and methods).
         </p>
 
-        <br />
+        <br>
 
         <p>This is initially how it will look like:</p>
         <pre>
@@ -399,11 +399,11 @@ const obj = {
           <em>methods property</em>
         </p>
         <pre>
-          <code code class="html">
+          <code class="html">
 &lt;button v-on:click="handleSave"&gt; Save &lt;/button&gt;
           </code>
         </pre>
-        <br />
+        <br>
 
         <p>
           Third, we need to use <em>v-if</em> inside the <em>&lt;ul&gt;</em>
@@ -438,7 +438,7 @@ const obj = {
 
         <p>Finally, we already prepared everything.</p>
 
-        <br />
+        <br>
 
         <p>
           For the last part, since we already imported the Vue package awhile
@@ -480,24 +480,24 @@ Vue.createApp(obj).mount('#app')
     </main>
 
     <footer>
-      <section class="upper">
+      <div class="upper">
         <div class="container">
-          <section id="footer-logo">
+          <div id="footer-logo">
             <div class="content">
               <div class="logo">
                 <a href="#main-menu">
-                  <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
+                  <img src="./assets/imgs/logo.svg" alt="Haidoe Logo">
                 </a>
               </div>
 
-              <h1 class="brand-name">
+              <div class="brand-name">
                 <a href="./index.html"> Hey, Doe! </a>
-              </h1>
+              </div>
             </div>
-          </section>
+          </div>
 
           <section id="page-list">
-            <h1>PAGES</h1>
+            <h2>PAGES</h2>
 
             <ul>
               <li>
@@ -517,7 +517,7 @@ Vue.createApp(obj).mount('#app')
           </section>
 
           <section id="follow-us">
-            <h1>Follow us</h1>
+            <h2>Follow us</h2>
 
             <ul>
               <li>
@@ -546,11 +546,11 @@ Vue.createApp(obj).mount('#app')
             </ul>
           </section>
         </div>
-      </section>
+      </div>
 
-      <section class="lower">
+      <div class="lower">
         <div class="container">&copy; 2022 HEY, DOE!</div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="./assets/imgs/favicon2.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="./assets/imgs/favicon2.png">
+
     <title>HEY, DOE!</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Fontawesome -->
     <script
@@ -24,7 +27,7 @@
         <div class="container menu-content">
           <div class="logo">
             <a href="./index.html">
-              <img src="./assets/imgs/logo.svg" alt="Hey, Doe! Logo" />
+              <img src="./assets/imgs/logo.svg" alt="Hey, Doe! Logo">
             </a>
           </div>
 
@@ -33,7 +36,7 @@
           </div>
 
           <button id="menuBtn" class="hamburger" aria-label="hamburger menu">
-            <div class="bar"></div>
+            <span class="bar"></span>
           </button>
         </div>
 
@@ -57,7 +60,7 @@
 
             <li class="search">
               <form id="searchForm" action="search">
-                <input type="search" placeholder="Search" />
+                <input type="search" placeholder="Search">
                 <button type="submit" aria-label="search icon">
                   <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
@@ -74,12 +77,12 @@
           <h1>Today's Trend</h1>
         </header>
 
-        <a href="/article.html " class="main-article">
+        <a href="./article.html " class="main-article">
           <article>
             <img
               src="./assets/imgs/main-article/mobile-v2.jpg"
               alt="a typewritter with a paper written with Vue.js"
-            />
+            >
 
             <small class="tag">
               FRONTEND DEVELOPMENT
@@ -99,12 +102,12 @@
         </a>
 
         <div>
-          <a href="/article.html">
+          <a href="./article.html">
             <article>
               <img
                 src="./assets/imgs/main-article/pexels-realtoughcandycom-11035471.jpg"
                 alt="a hand pushing toward a ReactJS Sticker"
-              />
+              >
 
               <small class="tag">
                 Web Development
@@ -117,12 +120,12 @@
             </article>
           </a>
 
-          <a href="/article.html">
+          <a href="./article.html">
             <article>
               <img
                 src="./assets/imgs/main-article/pexels-realtoughcandycom-11035543.jpg"
                 alt="a hand pushing toward an Angular JS Sticker"
-              />
+              >
 
               <small class="tag">
                 Web Development
@@ -199,14 +202,14 @@
         </article>
       </section>
 
-      <section class="roadmaps">
+      <div class="roadmaps">
         <a href="./article.html">
           <article>
             <h2>FRONTEND ROADMAP</h2>
             <img
               src="./assets/imgs/raodmaps/fe-small.jpg"
               alt="2 Frontend related books with a cactus plant in the left side"
-            />
+            >
           </article>
         </a>
 
@@ -216,7 +219,7 @@
             <img
               src="./assets/imgs/raodmaps/be-small.jpg"
               alt="a developer staring outside the window building in front of her laptop and 2 monitors "
-            />
+            >
           </article>
         </a>
 
@@ -226,41 +229,41 @@
             <img
               src="./assets/imgs/raodmaps/devops-small.jpg"
               alt="a man staring at his monitor and a laptop"
-            />
+            >
           </article>
         </a>
-      </section>
+      </div>
 
       <section class="newsletter">
         <h1>Newsletter</h1>
         <p>Get notified with the recent web updates and trends.</p>
 
         <form id="newsletterForm">
-          <input type="email" placeholder="Email" />
-          <input type="submit" value="SUBSCRIBE" />
+          <input type="email" placeholder="Email">
+          <input type="submit" value="SUBSCRIBE">
         </form>
       </section>
     </main>
 
     <footer>
-      <section class="upper">
+      <div class="upper">
         <div class="container">
-          <section id="footer-logo">
+          <div id="footer-logo">
             <div class="content">
               <div class="logo">
                 <a href="#main-menu">
-                  <img src="./assets/imgs/logo.svg" alt="Haidoe Logo" />
+                  <img src="./assets/imgs/logo.svg" alt="Haidoe Logo">
                 </a>
               </div>
 
-              <h1 class="brand-name">
+              <div class="brand-name">
                 <a href="./index.html"> Hey, Doe! </a>
-              </h1>
+              </div>
             </div>
-          </section>
+          </div>
 
           <section id="page-list">
-            <h1>PAGES</h1>
+            <h2>PAGES</h2>
 
             <ul>
               <li>
@@ -280,7 +283,7 @@
           </section>
 
           <section id="follow-us">
-            <h1>Follow us</h1>
+            <h2>Follow us</h2>
 
             <ul>
               <li>
@@ -309,11 +312,11 @@
             </ul>
           </section>
         </div>
-      </section>
+      </div>
 
-      <section class="lower">
+      <div class="lower">
         <div class="container">&copy; 2022 HEY, DOE!</div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
